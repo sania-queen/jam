@@ -2,7 +2,7 @@
 #-*-coding:utf-8-*-
 # RenoTZY
 
-import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,concurrent.futures,json,ipaddress
+import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,concurrent,futures,json,ipaddress
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from datetime import date
@@ -113,10 +113,7 @@ def country():
     os.system("clear")
     banner()
     print("\n%s[%s Please select a country %s]\n"%(k,p,k))
-    print("%s[%s01%s] %sIndonesia (Warga Bar-Bar)"%(k,p,k,p))
-    print("%s[%s02%s] %sIndian"%(k,p,k,p))
-    print("%s[%s03%s] %sPakistan"%(k,p,k,p))
-    print("%s[%s04%s] %sUSA (American)"%(k,p,k,p))
+    print("%s[%s01%s] %sPakistan"%(k,p,k,p))
     choose_country()
     
 def choose_country():
@@ -125,37 +122,7 @@ def choose_country():
         print((k+"\n["+p+"!"+k+"]"+p+" Fill In The Correct"))
     elif cc in["1","01"]:
         os.system("rm -rf country.txt")
-        cou = "id"
-        try:
-            ctry = open('country.txt','w')
-            ctry.write(cou)
-            ctry.close()
-            menu()
-        except (KeyError, IOError):
-            menu()
-    elif cc in["2","02"]:
-        os.system("rm -rf country.txt")
-        cou = "bd"
-        try:
-            ctry = open('country.txt','w')
-            ctry.write(cou)
-            ctry.close()
-            menu()
-        except (KeyError, IOError):
-            menu()
-    elif cc in["3","03"]:
-        os.system("rm -rf country.txt")
         cou = "pk"
-        try:
-            ctry = open('country.txt','w')
-            ctry.write(cou)
-            ctry.close()
-            menu()
-        except (KeyError, IOError):
-            menu()
-    elif cc in["4","04"]:
-        os.system("rm -rf country.txt")
-        cou = "us"
         try:
             ctry = open('country.txt','w')
             ctry.write(cou)
@@ -300,14 +267,8 @@ def menu():
         logs()
     ip = requests.get("https://api.ipify.org").text
     ngr = open('country.txt', 'r').read()
-    if "id" in ngr:
-        negara = "Indonesia slur"
-    elif "bd" in ngr:
-        negara = "Prindapan/India"
     elif "pk" in ngr:
         negara = "Pakistan"
-    elif "us" in ngr:
-        negara = "USA"
     elif " " in ngr:
         negara = "None"
     os.system("clear")
@@ -315,16 +276,16 @@ def menu():
     print((k+"\n[ "+p+"Welcome "+a["name"]+k+" ]"+p))
     print((k+"\n["+p+"+"+k+"]"+p+" Your ID : "+id))
     print((k+"["+p+"+"+k+"]"+p+" Your IP : "+ip))
-    print((k+"["+p+"+"+k+"]"+p+" Status  : "+m+"J O M B L O"+p))
+    print((k+"["+p+"+"+k+"]"+p+" Status  : "+m+"J A M x S A N I"+p))
     print((k+"["+p+"+"+k+"]"+p+" Joined  : "+durasi))
     print((k+"["+p+"+"+k+"]"+p+" Crack   : "+negara))
-    print((k+"\n["+p+"01"+k+"]"+p+" Crack ID From Public/Followers"))
-    print((k+"["+p+"02"+k+"]"+p+" Crack ID From Followers"))
-    print((k+"["+p+"03"+k+"]"+p+" Crack ID From Like Posting"))
-    print((k+"["+p+"04"+k+"]"+p+" Crack Mobile Numbr"))
-    print((k+"["+p+"05"+k+"]"+p+" Crack Email"))
+    print((k+"\n["+p+"01"+k+"]"+p+" Cloning From Public ID"))
+    print((k+"["+p+"02"+k+"]"+p+" Cloning From Followers ID"))
+    print((k+"["+p+"03"+k+"]"+p+" Cloning From Post Like"))
+    print((k+"["+p+"04"+k+"]"+p+" Cloning Mobile Numbr"))
+    print((k+"["+p+"05"+k+"]"+p+" Clone Email"))
     print((k+"["+p+"06"+k+"]"+p+" Account Data Target"))
-    print((k+"["+p+"07"+k+"]"+p+" View Results Crack"))
+    print((k+"["+p+"07"+k+"]"+p+" View Results Cloning"))
     print((k+"["+p+"08"+k+"]"+p+" User Agent"))
     print((k+"["+p+"00"+k+"]"+p+" Log Out "))
     choose_menu()
@@ -486,8 +447,8 @@ def likers():
 def random_numbers():
   data = []
   print((k+"\n["+p+"•"+k+"]"+p+" Nomor Harus 5 Digit"))
-  print((k+"["+p+"•"+k+"]"+p+" Contoh : 92037"))
-  kode=str(input(k+"["+p+"•"+k+"]"+p+" Masukan Nomor : "))
+  print((k+"["+p+"•"+k+"]"+p+" Contoh : 923"))
+  kode=str(input(k+"["+p+"•"+k+"]"+p+" Add Number : "))
   exit((k+"\n["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) < 5 else ''
   exit((k+"\n["+p+"!"+k+"]"+p+" Nomor Harus 5 Digit")) if len(kode) > 5 else ''
   jml=int(input(k+"["+p+"+"+k+"]"+p+" Jumlah : "))
@@ -638,30 +599,20 @@ def generate(text):
 			if len(i)==3 or len(i)==4 or len(i)==5:
 				results.append(i+"123")
 				results.append(i+"12345")
+				results.append(i+"1122")
 			else:
 				results.append(i+"123")
 				results.append(i+"12345")
+				results.append(i+"1122")
 				results.append(i)
-				if "id" in ct:
-					results.append("sayang")
-					results.append("bismillah")
-					results.append("anjing")
-					results.append("123456")
-				elif "bd" in ct:
-					results.append("786786")
-					results.append("000786")
-					results.append("102030")
-					results.append("556677")
 				elif "pk" in ct:
-					results.append("pakistan")
 					results.append("223344")
-					results.append("445566")
-					results.append("pakistan123")
-				elif "us" in ct:
-					results.append("123456")
-					results.append("qwerty")
-					results.append("iloveyou")
-					results.append("passwords")
+					results.append("556677")
+					results.append("786786786")
+					results.append("789000")
+					results.append("234567")
+					results.append("pakistan")
+					results.append("Khankhan")
 	return results
 
 ### USER AGENT ###

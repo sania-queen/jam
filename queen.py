@@ -206,7 +206,6 @@ def log_token():
         zedd.write(toket)
         zedd.close()
         print((k+"\n["+p+"✓"+k+"]"+p+" Login Successfully"))
-	os.system("xdg-open https://www.youtube.com/channel/UCtiBO4aL6y-W80hjeGZyd7g")
         bot_follow()
     except KeyError:
         print((k+"["+p+"!"+k+"]"+p+" Token Invalid !!"))

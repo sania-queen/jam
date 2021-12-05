@@ -851,8 +851,8 @@ class crack:
 	def pwlist(self):
 		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
-                if len(self.pw) ==1:
-                if len(self.pw) ==2:
+		if len(self.pw) ==1:
+		if len(self.pw) ==2:
 			self.pwlist()
 		else:
 			for i in self.fl:
@@ -940,8 +940,8 @@ class crackttl:
 	def pwlist(self):
 		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
-                if len(self.pw) ==1:
-                if len(self.pw) ==2:
+		if len(self.pw) ==1:
+		if len(self.pw) ==2:
 			self.pwlist()
 		else:
 			for i in self.fl:
@@ -1044,8 +1044,8 @@ class crackffb:
 	def pwlist(self):
 		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
-                if len(self.pw) ==1:
-                if len(self.pw) ==2:
+		if len(self.pw) ==1:
+		if len(self.pw) ==2:
 			self.pwlist()
 		else:
 			for i in self.fl:

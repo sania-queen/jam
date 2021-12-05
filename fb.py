@@ -851,8 +851,6 @@ class crack:
 	def pwlist(self):
 		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
-		if len(self.pw) ==1:
-		if len(self.pw) ==2:
 			self.pwlist()
 		else:
 			for i in self.fl:
@@ -940,8 +938,6 @@ class crackttl:
 	def pwlist(self):
 		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
-		if len(self.pw) ==1:
-		if len(self.pw) ==2:
 			self.pwlist()
 		else:
 			for i in self.fl:
@@ -1044,8 +1040,6 @@ class crackffb:
 	def pwlist(self):
 		self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
 		if len(self.pw) ==0:
-		if len(self.pw) ==1:
-		if len(self.pw) ==2:
 			self.pwlist()
 		else:
 			for i in self.fl:
@@ -1104,14 +1098,10 @@ class bapi:
           print((k+"["+p+"•"+k+"]"+p+" Example/Contoh : sayang,bismillah,123456"))
           self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
           if len(self.pw) ==0:
-          if len(self.pw) ==1:
-          if len(self.pw) ==2:
             continue
           for i in self.fs:
             try:
               self.fl.append({"id":i.split("<=>")[0],"pw":self.pw})
-              self.fl.append({"id":i.split("<=>")[1],"pw":self.pw})
-              self.fl.append({"id":i.split("<=>")[2],"pw":self.pw})
             except:
               continue
         except Exception as e:
@@ -1218,14 +1208,10 @@ class bapittl:
           print((k+"["+p+"•"+k+"]"+p+" Example/Contoh : sayang,bismillah,123456"))
           self.pw=input(k+"["+p+"•"+k+"]"+p+" Password List : ").split(",")
           if len(self.pw) ==0:
-          if len(self.pw) ==1:
-          if len(self.pw) ==2:
             continue
           for i in self.fs:
             try:
               self.fl.append({"id":i.split("<=>")[0],"pw":self.pw})
-              self.fl.append({"id":i.split("<=>")[1],"pw":self.pw})
-              self.fl.append({"id":i.split("<=>")[2],"pw":self.pw})
             except:
               continue
         except Exception as e:

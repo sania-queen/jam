@@ -357,7 +357,7 @@ def pilihcrack(file):
 
 def publik():
 	os.system("clear")
-        banner()
+	banner()
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
@@ -391,7 +391,7 @@ def publik():
 
 def likers():
 	os.system("clear")
-        banner()
+	banner()
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
@@ -424,7 +424,7 @@ def likers():
 
 def follow():
 	os.system("clear")
-        banner()
+	banner()
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:
@@ -491,7 +491,7 @@ def random_email():
 
 def jam():
 	os.system("clear")
-        banner()
+	banner()
 	try:
 		toket=open("login.txt","r").read()
 	except IOError:

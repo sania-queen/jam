@@ -476,13 +476,19 @@ def random_email():
 
 def jam():
 	try:
+		toket=open("login.txt","r").read()
+	except IOError:
+		print((p+"\n ["+k+"•"+m+"•"+p+"] Cookie/Token Invalid"))
+		os.system("rm -rf login.txt")
+		logs()
+	try:
 	        idt= raw_input('[+] File Name: ')
 	        for line in open(idt ,'r').readlines():
 	            id.append(line.strip())
-		except KeyError:
-			print((p+" ["+k+"•"+m+"•"+p+"] ID Not Found"))
-			print((p+"\n [BACK]"+p))
-			menu()
+	except KeyError:
+		print((p+" ["+k+"•"+m+"•"+p+"] ID Not Found"))
+		print((p+"\n [BACK]"+p))
+		menu()
 		r=requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 		id = []
 		z=json.loads(r.text)

@@ -265,9 +265,10 @@ def menu():
     print((p+"\n ["+o+"01"+p+"]"+h+" Crack ID From Public/Friendlist"))
     print((p+" ["+o+"02"+p+"]"+u+" Crack ID From Likes Post"))
     print((p+" ["+o+"03"+p+"]"+p+" Crack ID From Followers"))
-    print((p+" ["+o+"04"+p+"]"+m+" Crack Phone Number"))
+    print((p+" ["+o+"04"+p+"]"+p+" Crack ID From File"))
     print((p+" ["+o+"05"+p+"]"+k+" Crack Email"))
-    print((p+" ["+o+"06"+p+"]"+p+" Result Crack"))
+    print((p+" ["+o+"06+p+"]"+m+" Crack Phone Number")
+    print((p+" ["+o+"07+p+"]"+p+" Result Crack"))
     print((p+" ["+o+"00"+p+"]"+p+" Logout "))
     choose_menu()
 
@@ -283,10 +284,18 @@ def choose_menu():
 	elif r=="3" or r=="03":
 		follow()
 	elif r=="4" or r=="04":
-		random_numbers()
+		try:
+	        idlist= raw_input('[+] File Name: ')
+	        for line in open(idlist ,'r').readlines():
+	            id.append(line.strip())
+	    except IOError:
+	         print"[!] File Not Found."
+	         raw_input('Press Enter To Back. ')
 	elif r=="5" or r=="05":
-		random_email()
-	elif r=="6" or r=="06":
+	        random_email()
+	elif r=="6" or r=="06:
+	        rom_numbers()
+	elif r=="7 or r=="07:
 	    ress()
 	elif r=="0" or r=="00":
 		try:

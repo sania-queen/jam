@@ -178,11 +178,10 @@ def fbe():
 def logs():
   os.system("clear")
   banner()
-  print ("")
   print((p+" ["+o+"01"+p+"] Login Token"))
   print((p+" ["+o+"02"+p+"] Login Cookies"))
   print((p+" ["+o+"03"+p+"] Cloning Without Login"))
-  print((p+" ["+o+"04"+p+"] Report Bug Tools"))
+  print((p+" ["+o+"04"+p+"] Contact Whatsapp"))
   print((p+" ["+o+"05"+p+"] Contact Facebook"))
   print((p+" ["+o+"06"+p+"] Open My YouTube Channel"))
   print((p+" ["+o+"00"+p+"] Exit\n"))

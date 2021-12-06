@@ -268,8 +268,6 @@ def menu():
     print((p+" ["+o+"04"+p+"]"+p+" Crack ID From File"))
     print((p+" ["+o+"05"+p+"]"+k+" Crack Email"))
     print((p+" ["+o+"06+p+"]"+m+" Crack Phone Number")
-    print((p+" ["+o+"07+p+"]"+p+" Result Crack"))
-    print((p+" ["+o+"00"+p+"]"+p+" Logout "))
     choose_menu()
 
 def choose_menu():
@@ -295,9 +293,7 @@ def choose_menu():
 	        random_email()
 	elif r=="6" or r=="06:
 	        rom_numbers()
-	elif r=="7 or r=="07:
-	    ress()
-	elif r=="0" or r=="00":
+	elif r=="0 or r=="00:
 		try:
 			os.system("rm -rf login.txt")
 			exit()

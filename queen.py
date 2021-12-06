@@ -7,10 +7,8 @@
 # Author JAM SHAHRUKH                                #
 # Github: https://www.github.com/Stylish-Queen       #
 ######################################################
-
-#####################################################
 # Thanks To Use My Tools
-#####################################################
+######################################################
 
 import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,urllib,json,urllib.parse,concurrent.futures,hashlib,threading
 from random import randint
@@ -28,16 +26,6 @@ b = "\x1b[0;34m" # biru
 u = "\x1b[0;35m" # ungu
 o = "\x1b[0;36m" # biru muda
 
-back = 0
-threads = []
-successful = []
-checkpoint = []
-oks = []
-gagal = []
-idh = []
-id = []
-emfromfriend = []
-nofromfriend = []
 
 if ("linux" in sys.platform.lower()):
 

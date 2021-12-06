@@ -232,10 +232,11 @@ def pilih_login():
 		os.system("xdg-open https://m.facebook.com/jam.shahrukh.official")
 	        login()
         elif peak =="3":
-	        os.system('xdg-open https://m.youtube.com/channel/UCtiBO4aL6y-W80hjeGZyd7g?sub_confirmation=1')
+	        os.system('xdg-open https://m.youtube.com/channel/UCtiBO4aL6y-W80hjeGZyd7g')
 	        login()
 	elif peak =="0":
-		os.system('python2 queen.py')
+		os.system('clear')
+		os.system('python queen.py')
         else:
 		print"\033[1;91m[!] Wrong input"
 		keluar()

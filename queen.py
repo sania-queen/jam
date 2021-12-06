@@ -20,8 +20,6 @@ from datetime import date
 from datetime import datetime
 current = datetime.now()
 
-os.system("termux-setup-storage")
-
 p = "\x1b[0;37m" # putih
 m = "\x1b[0;31m" # merah
 h = "\x1b[0;32m" # hijau

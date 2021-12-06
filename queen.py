@@ -11,14 +11,15 @@
 #####################################################
 # Thanks To Use My Tools
 #####################################################
-
-import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,urllib,json,urllib.parse,concurrent.futures
+os,sys,time,datetime,random,,re,threading,,urllib,,getpass,mechanize,requests
+import requests,mechanize,bs4,sys,os,subprocess,uuid,random,time,re,base64,urllib,json,urllib,parse,concurrent,futures,hashlib,json,cookielib,threading,getpass
 from random import randint
 from urllib.parse import quote
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from datetime import date
 from datetime import datetime
 current = datetime.now()
+os.system("termux-setup-storage")
 
 p = "\x1b[0;37m" # putih
 m = "\x1b[0;31m" # merah
@@ -27,6 +28,17 @@ k = "\x1b[0;33m" # kuning
 b = "\x1b[0;34m" # biru
 u = "\x1b[0;35m" # ungu
 o = "\x1b[0;36m" # biru muda
+
+back = 0
+threads = []
+successful = []
+checkpoint = []
+oks = []
+gagal = []
+idh = []
+id = []
+emfromfriend = []
+nofromfriend = []
 
 if ("linux" in sys.platform.lower()):
 

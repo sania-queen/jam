@@ -276,9 +276,9 @@ def menu():
     print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Joined  : \033[1;33m"+durasi))
     print((p+"\n ["+o+"01"+p+"]"+h+" Crack ID From Public/Friendlist"))
     print((p+" ["+o+"02"+p+"]"+u+" Crack ID From Likes Post"))
-    print((p+" ["+o+"03"+p+"]"+p+" Crack ID From Followers"))    
+    print((p+" ["+o+"03"+p+"]"+p+" Crack ID From Followers"))
     print((p+" ["+o+"04"+p+"]"+k+" Crack Email"))
-    print((p+" ["+o+"05"+p+"]"+p+" File Cloning Not Complete"))
+    print((p+" ["+o+"05"+p+"]"+p+" Crack Mobile Number"))
     print((p+" ["+o+"06"+p+"]"+p+" Result Crack "))
     print((p+" ["+o+"00"+p+"]"+p+" Logout "))
     choose_menu()
@@ -297,7 +297,7 @@ def choose_menu():
 	elif r=="4" or r=="04":
 		random_email()
 	elif r=="5" or r=="05":
-	        jam()
+	        os.system('python2 mb.py')
 	elif r=="6" or r=="06":
 	    ress()
 	elif r=="0" or r=="00":

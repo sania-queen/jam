@@ -168,9 +168,10 @@ def logs():
   print ("")
   print((p+" ["+o+"01"+p+"] Login Token"))
   print((p+" ["+o+"02"+p+"] Login Cookies"))
-  print((p+" ["+o+"03"+p+"] Open My YouTube Channel"))
+  print((p+" ["+o+"03"+p+"] Cloning Without Login"))
   print((p+" ["+o+"04"+p+"] Report Bug Tools"))
-  print((p+" ["+o+"05"+p+"] Contact Author"))
+  print((p+" ["+o+"05"+p+"] Contact Facebook"))
+  print((p+" ["+o+"06"+p+"] Open My YouTube Channel"))
   print((p+" ["+o+"00"+p+"] Exit\n"))
   sek=input(p+" ["+k+"•"+m+"•"+p+"] Choose: ")
   if sek=="":
@@ -182,11 +183,13 @@ def logs():
   elif sek=="2" or sek=="02":
     gen()
   elif sek=="3" or sek=="03":
-    kontolrecode()
+    os.system('python2 mb.py')
   elif sek=="4" or sek=="04":
     fbe()
   elif sek=="5" or sek=="05":
     ige()
+  elif sek=="5" or sek=="06":
+    kontolrecode()
   elif sek=="0" or sek=="00":
     exit()
   else:
@@ -438,7 +441,7 @@ def follow():
 def random_numbers():
   data = []
   print((p+"\n ["+k+"•"+m+"•"+p+"] Number Must Be 5 Digit"))
-  kode=str(input(p+" ["+k+"•"+m+"•"+p+"] Example : 92037\n"+p+" ["+k+"•"+m+"•"+p+"] Input Number: "))
+  kode=str(input(p+" ["+k+"•"+m+"•"+p+"] Example : 92300,92311,92340\n"+p+" ["+k+"•"+m+"•"+p+"] Input Number: "))
   exit((p+"\n ["+k+"•"+m+"•"+p+"] Number Must Be 5 Digit")) if len(kode) < 5 else ''
   exit((p+"\n ["+k+"•"+m+"•"+p+"] Number Must Be 5 Digit")) if len(kode) > 5 else ''
   jml=int(input(p+" ["+k+"•"+m+"•"+p+"] Amount : "))
@@ -504,21 +507,21 @@ def generate(text):
 		else:
 			i=i.lower()
 			if len(i)==3 or len(i)==4 or len(i)==5:
-				results.append(i+"12")
 				results.append(i+"123")
 				results.append(i+"12345")
+				results.append("234567")
+				results.append("223344")
+				results.append("556677")
+				results.append("786786786")
+				results.append("pakistan")
 			else:
-				results.append(i+"12")
 				results.append(i+"123")
 				results.append(i+"12345")
-				results.append(i)
-				if "indonesia" in ips:
-					results.append("234567")
-					results.append("223344")
-					results.append("786786786")
-					results.append("556677")
-					results.append("pakistan")
-					results.append("654321")
+				results.append("234567")
+				results.append("223344")
+				results.append("556677")
+				results.append("786786786")
+				results.append("pakistan")
 	return results
 
 ### MODULE CRACK ###

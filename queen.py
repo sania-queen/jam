@@ -289,8 +289,8 @@ def choose_menu():
 		random_email()
 	elif r=="6" or r=="06":
 	        jam()
-	elif r=="7 or r=="07:
-		ress()
+	elif r=="7" or r=="07":
+	    ress()
 	elif r=="0" or r=="00":
 		try:
 			os.system("rm -rf login.txt")

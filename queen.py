@@ -482,7 +482,7 @@ def jam():
 		os.system("rm -rf login.txt")
 		logs()
 	try:
-	        idt= raw_input('[+] File Name: ')
+	        idt= input(p+" ["+k+"•"+m+"•"+p+"] Target File : ")
 	        for line in open(idt ,'r').readlines():
 	            id.append(line.strip())
 	except KeyError:

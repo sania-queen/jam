@@ -269,8 +269,8 @@ def menu():
     ip = requests.get("https://api.ipify.org").text
     os.system("clear")
     banner()
-    print((p+"\n [ Welcome User \033[1;33m"+a["name"]+p+" ]"+p))
-    print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Status  : "+m+"J A M x S A N I"+p))
+    print((p+" [ Welcome User \033[1;33m"+a["name"]+p+" ]"+p))
+    print((p+"\n ["+k+"•"+m+"•"+p+"]"+p+" Your Status  : "+m+"J A M x S A N I"+p))
     print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your ID      : \033[1;33m"+id))
     print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Ip      : \033[1;33m"+ip))
     print((p+" ["+k+"•"+m+"•"+p+"]"+p+" Your Joined  : \033[1;33m"+durasi))
